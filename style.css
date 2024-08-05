@@ -11,7 +11,6 @@ body {
 header {
   height: 98px;
   width: 100%;
-  min-width: 600px;
   position: flex;
   background-color: #00bbc9;
   z-index: 999;
@@ -25,29 +24,28 @@ header {
   justify-content: left;
   padding: 0vw 2vw;
   height: 98px;
-  width: 1440px;
 }
 
-.username {
-  font-family: "Inter", sans-serif;
-  font-size: 24px;
-  height: 34px;
-}
 .foto-user {
   align-items: center;
  justify-content: center;
- padding-left: 25px;
+ padding-left: 20px;
+ padding: 15px;
+ display: flex;
+
 }
 
 .menu {
-  padding:  12px;
-  padding-left: 15vw;
+  padding:  2px;
+  padding-left: 20vw;
+  margin: 2px;
   display: block;
   cursor: pointer;
 }
 #op {
   position: absolute;
-  padding: 2vw;
+  padding: 1vw;
+  margin:18;
   background: none;
 }
 
@@ -59,6 +57,7 @@ header {
 }
 nav{
   display: none;
+  margin-top: 20.1px;
 }
 
 
