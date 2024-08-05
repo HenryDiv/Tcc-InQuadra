@@ -10,7 +10,7 @@
   display: flex;
   align-items: center;
   width: 100%;
-  background-color: #00bbc9;
+  background-color:#00bbc9;;
   justify-content: left;
   padding: 0vw 2vw;
   height: 98px;
@@ -35,8 +35,6 @@
   display: none;
   margin-top: 15px;
   padding: 1vw;
-
-  background: none;
 }
 
 .op-header {
@@ -44,6 +42,7 @@
   border-radius: 25px;
   display: block;
   background-color: #00bbc9;
+  background: #00bbc9;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
@@ -77,6 +76,33 @@
   border-radius: 25px;
   width: 95%;
   outline: none;
+}
+
+.retangulo{
+  position: relative;
+  background-color: none;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  width: 95%;
+  height: 90px;
+  gap: 1vw;
+  margin-top: 30px;
+  margin-left: 2vw;
+  border-radius:20px;
+  border: 1px solid #000000;
+}
+
+.retangulo>div{
+  margin-left: 20px;
+  width: 85px;
+  height: 75px;
+  border: 1px solid #000000;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+
+
 }
 
 a {
