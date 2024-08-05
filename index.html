@@ -1,48 +1,75 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
-    <script src="script.js"></script>
-    <title>tcc</title>
-  </head>
-  <body>
-    <header>
-      <div class="logo">
-        <img src="assets/logo.png" alt="" width="96" />
-        <div class="search">
-          <label for="searchInput"><img class="lupa"  src="assets/lupa.png" alt="" width="24px"></label>
-          <input type="text"  id="searchInput" placeholder="Pesquisar">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
+  <script src="script.js"></script>
+  <title>tcc</title>
+</head>
+
+<body>
+  <header>
+    <div class="logo">
+      <img src="assets/logo.png" alt="" width="96" />
+      <div class="search">
+        <label for="searchInput"><img class="lupa" src="assets/lupa.png" alt="" width="24px"></label>
+        <input type="text" id="searchInput" placeholder="Pesquisar">
+      </div>
+      <div class="menu">
+        <img id="image" src="assets/menu.svg" alt="" onclick="clickMenu()" />
+        <nav id="op">
+          <ul class="op-header">
+            <li><a href="#">Conta</a></li>
+            <li><a href="#">Verificar Conta</a></li>
+            <li><a href="#">Configurações</a></li>
+            <li><a href="#">Sair</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="foto-user"><img src="assets/foto-padrao.png" alt="" /></div>
+    </div>
+  </header>
+  <main>
+    <section class="modalidade">
+      <div class="retangulo">
+        <div>
+          <span>Basquete</span>
         </div>
-        <div class="menu">
-          <img id="image" src="assets/menu.svg" alt="" onclick="clickMenu()" />
-          <nav id="op">
-            <ul class="op-header">
-              <li><a href="#">Conta</a></li>
-              <li><a href="#">Verificar Conta</a></li>
-              <li><a href="#">Configurações</a></li>
-              <li><a href="#">Sair</a></li>
-            </ul>
-          </nav>
+        <div>
+          <span>baska</span>
         </div>
-        <div class="foto-user"><img src="assets/foto-padrao.png" alt="" /></div>
-       </div>
-    </header>
-    <main>
-      <section class="modalidade">
-        <div class="retangulo">
-          <div>
-            <img src="assets/basquetebol 1.svg" alt="" class="baska">
-            <span>Basquete</span>
-          </div>
-          <div><img src="assets/basquetebol 1.svg" alt="">
-          <span>baska</span></div>
-          <div><img src="assets/basquetebol 1.svg" alt="">
-            <span>baska</span></div>
+        <div>
+          <span>baska</span>
         </div>
-      </section>
-    </main>
-  </body>
+        <div>
+          <span>baska</span>
+        </div>
+        <div>
+          <span>baska</span>
+        </div>
+        <div>
+          <span>baska</span>
+        </div>
+        <div>
+          <span>baska</span>
+        </div>
+        <div>
+          <span>baska</span>
+        </div>
+        <div>
+          <span>baska</span>
+        </div>
+        <div>
+          <span>baska</span>
+        </div>
+        
+        
+      </div>
+    </section>
+  </main>
+</body>
+
 </html>
