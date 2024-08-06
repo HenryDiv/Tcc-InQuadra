@@ -7,6 +7,7 @@
 
 
 .logo{
+  position: relative;
   display: flex;
   align-items: center;
   width: 100%;
@@ -14,6 +15,7 @@
   justify-content: left;
   padding: 0vw 2vw;
   height: 98px;
+  cursor:pointer;
 }
 
 .foto-user {
@@ -79,12 +81,12 @@
 }
 
 .retangulo{
-  position: relative;
+  position: block;
   background-color: none;
   display: flex;
-  justify-content: left;
+  justify-content: center;
   align-items: center;
-  width: 95%;
+  width: 90%;
   height: 90px;
   gap: 1vw;
   margin-top: 30px;
@@ -102,8 +104,12 @@
   justify-content: center;
   align-items: center;
   border-radius: 20px;
-
-
+}
+.retangulo div img{
+  width: 3vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 a {
