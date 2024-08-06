@@ -15,7 +15,9 @@
   justify-content: left;
   padding: 0vw 2vw;
   height: 98px;
-  cursor:pointer;
+}
+.logo-img{
+  cursor: pointer;
 }
 
 .foto-user {
