@@ -87,7 +87,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 90%;
+  width: 80%;
   height: 90px;
   gap: 1vw;
   margin: 40px auto;
@@ -96,7 +96,7 @@
 }
 
 .retangulo>div{
-  margin-left: 20px;
+  margin-left: 20px auto;
   width: 85px;
   height: 75px;
   background-color:#CACACA;
