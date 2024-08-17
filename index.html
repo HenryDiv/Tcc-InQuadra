@@ -12,14 +12,14 @@
 
 <body>
   <header>
-    <div class="container">
+    <div class="container"> <!--  div responsavel pelo conteudo do header -->
       <img src="assets/logo.png" alt="" width="96" class="logo-img"/>
       <div class="search">
         <label for="searchInput"><img class="lupa" src="assets/lupa.png" alt="" width="24px"></label>
         <input type="text" id="searchInput" placeholder="Pesquisar">
       </div>
-      <div class="menu">
-        <img id="image" src="assets/menu.svg" alt="" onclick="clickMenu()" />
+      <div class="menu">  <!-- este menu fode com a responsividade precisa trocar futuramente -->
+        <img id="image" src="assets/menu.svg" alt="" onclick="clickMenu()" /> 
         <nav id="op">
           <ul class="op-header">
             <li><a href="#">Conta</a></li>
@@ -29,23 +29,23 @@
           </ul>
         </nav>
       </div>
-      <div class="foto-user"><img src="assets/foto-padrao.png" alt="" /></div>
+     <div class="foto-user"><img src="assets/foto-padrao.png" alt="" /></div>   <!-- representação da foto de perfil do usuario -->
     </div>
   </header>
   <main>
-    <section class="modalidade">
+     <section class="modalidade"> <!--adicionar links para as paginas das modalides -->
       <div class="retangulo">
-        <ul>
-          <li><img src="assets/basquetebol 1.svg" alt=""><p>basquete</p></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
+        <ul class="links">
+            <li> <a href=""><img src="assets/basquetebol 1.svg" alt="" width="40px"><p>basquete</p></a> </li>
+          <li> <a href=""><img src="assets/bola.png" alt="" width="40px"><p>Futebol</p> </a></li>
+          <li> <a href=""><img src="assets/de-bilhar.png" alt="" width="40px"><p>Bilhar</p></a> </li>
+          <li> <a href=""><img src="assets/golfe.png" alt="" width="40px"><p>golfe</p> </a></li>
+          <li> <a href=""><img src="assets/oculos-de-natacao.png" alt="" width="40px"><p>Natação</p></a> </li>
+          <li> <a href=""><img src="assets/voleibol.png" alt="" width="40px"><p>volei</p></a> </li>
+          <li><a href=""> <img src="assets/tenis.png" alt="" width="40px"><p>tenis</p></a></li>
+          <li> <a href=""><img src="assets/pingue-pongue.png" alt="" width="40px"><p>ping pong</p></a> </li>
+          <li> <a href=""><img src="assets/patim.png" alt="" width="40px"><p>Skate</p></a> </li>
+          <li><a href=""><img src="assets/objetivo.png" alt="" width="40px"><p>Futsal</p> </a></li>
         </ul>
       </div>
     </section>
