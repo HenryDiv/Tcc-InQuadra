@@ -6,7 +6,7 @@
 }
 
 
-.container{
+.header-container{
   position: relative;
   display: flex;
   align-items: center;
@@ -24,6 +24,7 @@
   align-items:center;
  justify-content: center;
  padding-left: 16px;
+ padding-right: 16px;
  border: none;
  display: flex;
 
@@ -103,7 +104,7 @@
 
 .retangulo li{
   width: 85px;
-  height: 75px;
+  height: 100px;
   background-color: #CACACA;
   border-radius: 20px;
   display: flex;
@@ -147,7 +148,7 @@
   height: 199px;
   margin-left: 40px;
   margin-right: 40px;
-  border-radius:20px;
+  
 }
 .melhores-avaliados li img{
   border-radius: 20px;
