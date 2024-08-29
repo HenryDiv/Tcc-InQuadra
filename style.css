@@ -30,15 +30,16 @@
 }
 
 .menu {
-  padding-left: 10vw;
-  display: block;
+  padding-left: 20px;
   cursor: pointer;
+  position: relative;
 }
+
 #op {
   position: absolute;
   display: none;
-  margin-top: 15px;
-  padding: 1vw;
+  top: 35px;
+  right: 0px;
 }
 
 .op-header {
