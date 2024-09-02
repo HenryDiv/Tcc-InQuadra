@@ -1,108 +1,217 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon" />
+    <script src="script.js"></script>
+    <title>INQUADRA</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="style.css" />
-  <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
-  <script src="script.js"></script>
-  <title>INquadra</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-</head>
-
-<body>
-  <header>
-    <div class="header-container"> <!--  div responsavel pelo conteudo do header -->
-      <img src="assets/logo.png" alt="" width="96" class="logo-img"/>
-      <div class="search">
-        <label for="searchInput"><img class="lupa" src="assets/lupa.png" alt="" width="24px"></label>
-        <input type="text" id="searchInput" placeholder="Pesquisar">
-      </div>
-      <div class="menu">  <!-- este menu fode com a responsividade precisa trocar futuramente -->
-        <img id="image" src="assets/menu.svg" alt="" onclick="clickMenu()" /> 
-        <nav id="op">
-          <ul class="op-header">
-            <li><a href="#">Conta</a></li>
-            <li><a href="#">Verificar Conta</a></li>
-            <li><a href="#">Configurações</a></li>
-            <li><a href="#">Sair</a></li>
+  <body>
+    <header>
+      <div class="header-container">
+        <!--  div responsavel pelo conteudo do header -->
+        <img src="assets/logo.png" alt="" width="96" class="logo-img" />
+        <div class="search">
+          <label for="searchInput"
+            ><img class="lupa" src="assets/lupa.png" alt="" width="24px"
+          /></label>
+          <input type="text" id="searchInput" placeholder="Pesquisar" />
+        </div>
+        <div class="dropdown">
+          <button
+            class="btn btn-secondary dropdown-toggle"
+            type="button"
+            id="dropdownMenuButton1"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            <img src="assets/menu.svg" alt="" />
+          </button>
+          <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+            <li><a class="dropdown-item" href="#">Configurações</a></li>
+            <li>
+              <a class="dropdown-item" href="pags/anuncio/anuncio.html"
+                >Anuncie-aqui</a
+              >
+            </li>
+            <li>
+              <a
+                class="dropdown-item"
+                href="pags/login/login.html"
+                target="_self"
+                >Login</a
+              >
+            </li>
+            <li>
+              <a class="dropdown-item" href="pags/cadastro/cadastro.html"
+                >Criar conta</a
+              >
+            </li>
+            <li><a class="dropdown-item" href="#">Sair</a></li>
           </ul>
-        </nav>
+        </div>
+        <div class="foto-user"><img src="assets/foto-padrao.png" alt="" /></div>
+        <!-- representação da foto de perfil do usuario -->
+        <button class="login login01">
+          <a href="pags/login/login.html" target="_self">Login</a>
+        </button>
+        <button class="login login02">
+          <a href="pags/anuncio/anuncio.html">Anuncie-aqui</a>
+        </button>
       </div>
-     <div class="foto-user"><img src="assets/foto-padrao.png" alt="" /></div> 
-     <p>Anuncie-aqui</p> <!-- representação da foto de perfil do usuario -->
-    </div>
-  </header>
-  <main>
-     <section class="modalidade"> <!--adicionar links para as paginas das modalides -->
-      <div class="retangulo">
-        <ul class="links">
-            <li> <a href=""><img src="assets/basquetebol 1.svg" alt="" width="40px"><p>basquete</p></a> </li>
-          <li> <a href=""><img src="assets/bola.png" alt="" width="40px"><p>Futebol</p> </a></li>
-          <li> <a href=""><img src="assets/de-bilhar.png" alt="" width="40px"><p>Bilhar</p></a> </li>
-          <li> <a href=""><img src="assets/golfe.png" alt="" width="40px"><p>golfe</p> </a></li>
-          <li> <a href=""><img src="assets/oculos-de-natacao.png" alt="" width="40px"><p>Natação</p></a> </li>
-          <li> <a href=""><img src="assets/voleibol.png" alt="" width="40px"><p>volei</p></a> </li>
-          <li><a href=""> <img src="assets/tenis.png" alt="" width="40px"><p>tenis</p></a></li>
-          <li> <a href=""><img src="assets/pingue-pongue.png" alt="" width="40px"><p>Pong</p></a> </li>
-          <li> <a href=""><img src="assets/patim.png" alt="" width="40px"><p>Skate</p></a> </li>
-          <li><a href=""><img src="assets/objetivo.png" alt="" width="40px"><p>Futsal</p> </a></li>
+    </header>
+    <main>
+      <section class="modalidade">
+        <!--adicionar links para as paginas das modalides -->
+        <div class="retangulo">
+          <ul class="links">
+            <li>
+              <a href=""
+                ><img src="assets/basquetebol 1.svg" alt="" width="40px" />
+                <p>basquete</p></a
+              >
+            </li>
+            <li>
+              <a href=""
+                ><img src="assets/bola.png" alt="" width="40px" />
+                <p>Futebol</p>
+              </a>
+            </li>
+            <li>
+              <a href=""
+                ><img src="assets/de-bilhar.png" alt="" width="40px" />
+                <p>Bilhar</p></a
+              >
+            </li>
+            <li>
+              <a href=""
+                ><img src="assets/golfe.png" alt="" width="40px" />
+                <p>golfe</p>
+              </a>
+            </li>
+            <li>
+              <a href=""
+                ><img src="assets/oculos-de-natacao.png" alt="" width="40px" />
+                <p>Natação</p></a
+              >
+            </li>
+            <li>
+              <a href=""
+                ><img src="assets/voleibol.png" alt="" width="40px" />
+                <p>volei</p></a
+              >
+            </li>
+            <li>
+              <a href="">
+                <img src="assets/tenis.png" alt="" width="40px" />
+                <p>tenis</p></a
+              >
+            </li>
+            <li>
+              <a href=""
+                ><img src="assets/pingue-pongue.png" alt="" width="40px" />
+                <p>Pong</p></a
+              >
+            </li>
+            <li>
+              <a href=""
+                ><img src="assets/patim.png" alt="" width="40px" />
+                <p>Skate</p></a
+              >
+            </li>
+            <li>
+              <a href=""
+                ><img src="assets/objetivo.png" alt="" width="40px" />
+                <p>Futsal</p>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <h2 class="h2-melhores-avaliados">Melhores avalidados</h2>
+      <section class="melhores-avaliados">
+        <ul>
+          <li>
+            <img src="assets/golf.jpg" alt="" />
+            <h2>NOMEANUNCIO</h2>
+            <p>descrição da quadra</p>
+          </li>
+          <li>
+            <img src="assets/golf.jpg" alt="" />
+            <h2>NOMEANUNCIO</h2>
+            <p>descrição da quadra</p>
+          </li>
+          <li>
+            <img src="assets/golf.jpg" alt="" />
+            <h2>NOMEANUNCIO</h2>
+            <p>descrição da quadra</p>
+          </li>
+          <li>
+            <img src="assets/golf.jpg" alt="" />
+            <h2>NOMEANUNCIO</h2>
+            <p>descrição da quadra</p>
+          </li>
+        </ul>
+      </section>
+      <h2 class="h2-mais-populares">Mais Populares</h2>
+      <section class="mais-populares">
+        <ul>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
+      </section>
+      <h2 class="h2-menor-custo">Menor custo</h2>
+      <section class="menor-custo">
+        <ul>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
+      </section>
+    </main>
+    <footer>
+      <div class="footer-container">
+        <ul>
+          <h3>INquadra</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi
+            consectetur saepe sequi neque explicabo quod, mollitia earum
+            reprehenderit incidunt repudiandae delectus omnis deserunt, numquam
+            tenetur, in velit iste quam provident.
+          </p>
+        </ul>
+        <ul class="link">
+          <h3>Link</h3>
+          <li><a href="pags/Termos/termos.html">Termos e condições</a></li>
+          <li><a href="#section02">Tpos</a></li>
+          <li><a href="#section03">Impactos</a></li>
+          <li><a href="#section04">Onde descartar</a></li>
+        </ul>
+
+        <ul>
+          <h3>Contatos</h3>
+          <li>+55 41 99999-99999</li>
+          <li>henry4i20@gmail.com</li>
+          <li>Brasil</li>
         </ul>
       </div>
-    </section>
-    <h2 class="h2-melhores-avaliados">Melhores avalidados</h2>
-    <section class="melhores-avaliados">
-      <ul>
-        <li><img src="assets/golf.jpg" alt="" width="100%" height="100%"><h2>NOMEANUNCIO</h2><p>descrição da quadra</p></li>
-        <li></li>
-        <li></li>
-        <li></li>
-      </ul>
-    </section>
-    <h2 class="h2-mais-populares">Mais Populares</h2>
-    <section class="mais-populares">
-     <ul>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-     </ul>
-    </section>
-    <h2 class="h2-menor-custo">Menor custo</h2>
-    <section class="menor-custo">
-      <ul>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-      </ul>
-      </section>
-  </main>
-  <footer>
-    <div class="footer-container">
-      <ul>
-        <h3>INquadra</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi consectetur saepe sequi neque explicabo quod, mollitia earum reprehenderit incidunt repudiandae delectus omnis deserunt, numquam tenetur, in velit iste quam provident.</p>
-        
-      </ul>
-      <ul class="link"><h3>Link</h3>
-      <li><a href="#section01">incio</a></li>
-      <li><a href="#section02">Tpos</a></li>
-      <li><a href="#section03">Impactos</a></li>
-      <li><a href="#section04">Onde descartar</a></li>
-    </ul>
-    
-    <ul>
-      <h3>Contatos</h3>
-      <li>+55 41 99999-99999</li>
-      <li>henry4i20@gmail.com</li>
-      <li>Brasil</li>
-    </ul>
-    </div>
-  </footer>
-    
-</body>
-
+    </footer>
+  </body>
 </html>

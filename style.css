@@ -11,7 +11,7 @@
   display: flex;
   align-items: center;
   width: 100%;
-  background-color:#00bbc9;;
+  background-color:#00bbc9;
   justify-content: left;
   padding: 0vw 2vw;
   height: 98px;
@@ -30,35 +30,39 @@
 
 }
 
-.menu {
-  padding-left: 20px;
-  cursor: pointer;
-  position: relative;
+.btn-secondary{
+  background-color: #00bbc9 !important;
+ 
+}
+.btn{
+  border: none !important;
 }
 
-#op {
-  position: absolute;
-  display: none;
-  top: 35px;
-  right: 0px;
+.dropdown-item:hover{
+  background-color: #44E3D3 !important;
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 48px;
 }
-
-.op-header {
-  list-style-type: none;
-  border-radius: 25px;
+.login{
   display: block;
-  background-color: #00bbc9;
-  background: #00bbc9;
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border: none;
+  border-radius: 25px;
+  width: 120px;
+  height: 40px;
+  gap: 40px;
+  transition: all 200ms linear;
+
+}
+.login:hover{
+  transition: all 200ms linear;
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 48px;
+  background-color:#44E3D3;
+  color: #000000;
+}
+.login01{
+margin: 10px;
+
 }
 
-
-#op li a {
-  display: inline-block;
-  color: rgb(0, 0, 0);
-  text-decoration: none;
-  padding: 25px;
-}
 .search{
   display: flex;
   height: 50px;
@@ -131,10 +135,11 @@
 }
 
 .melhores-avaliados ul,.mais-populares ul, .menor-custo ul{
+  margin-top: 40px;
   display:flex;
   justify-content: center;
   border-radius: 20px;
-  padding-bottom: 60px;
+  padding-bottom: 40px;
   
 }
 
@@ -166,7 +171,7 @@ footer .footer-container{
 
 }
 footer .footer-container ul{
-  margin-top: 30px;
+
   width: 25%;
 }
 footer .footer-container h3{
@@ -190,7 +195,35 @@ footer .footer-container a{
 }
 
 a{
-  text-decoration: none;
+  text-decoration: none !important;
+  color: #000000 !important;
+}
+@media (max-width:1200px) {
+  .retangulo {
+   display: none;
+  }
+  .melhores-avaliados ul, .mais-populares ul, .menor-custo ul {
+    margin-top: 40px;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 100px;
+    align-items: center;
+    padding: 0;
+  }
+  footer .footer-container ul{
+    width: 100%;
+    padding: 13px;
+    width: 100%;
+  }
+  footer .footer-container{
+    flex-direction: column;
+  }
+  .foto-user{
+    display: none;
+  }
+  .login{
+    display: none;
+  }
 }
 
 
