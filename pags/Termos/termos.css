@@ -17,8 +17,8 @@ body{
 .termos{
     
     background-color: #cacaca;
-    width: 800px;
-    height:800px;
+    width: 90%;
+    height:auto;
     border-radius: 25px;
 }
 .termos div{
@@ -33,12 +33,13 @@ body{
 h1{
     text-align: center;
 }
-@media(max-width:400px){
+@media(max-width:1200px){
     .termos{
-        width: auto;
+        width: 90%;
         height: auto;
     }
     body{
+        padding-top: 20px;
         height: auto;
     }
 
