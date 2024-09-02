@@ -15,13 +15,13 @@
 <body>
   <div class="login">
     <form>
-      <a href="/index.html"><img src="/assets/logo.png" alt="" width="180px" class="logo"></a>
+      <a href="../../index.html"><img src="../../assets/logo.png" alt="" width="180px" class="logo"></a>
       <h2 class="h2-txt">Compartilhe algumas informações sobre sua
         quadra</h2>
       <p>Os itens com (*) são obrigatórios</p>
       <div>
         <label for="exampleInputEmail1" class="form-label">Título</label>
-          <input type="text" class="form-control"
+          <input type="text" class="form-control mb-4"
             placeholder="Digite um título para o seu anúncio"><!--input titulo anuncio -->
           <label for="exampleFormControlTextarea1" class="form-label">Descrição</label>
           <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
@@ -34,20 +34,41 @@
 
           <div class="col">
             <label class="form-check-label d-block" for="basquete">
-              <input class="form-check-input" type="checkbox" value="" id="basquete" > BASQUETE
+              <input class="form-check-input" type="checkbox" value="" id="basquete" > Basquete
             </label>
-            <label class="form-check-label d-block" for="volei">
-              <input class="form-check-input" type="checkbox" value="" id="volei"> VOLEI 
+            <label class="form-check-label d-block" for="futebol">
+              <input class="form-check-input" type="checkbox" value="" id="futebol"> Futebol
+            </label>
+            <label class="form-check-label d-block" for="bilhar">
+              <input class="form-check-input" type="checkbox" value="" id="bilhar"> Bilhar
+            </label>
+            <label class="form-check-label d-block" for="golfe">
+              <input class="form-check-input" type="checkbox" value="" id="golfe"> Golfe
+            </label>
+            <label class="form-check-label d-block" for="natacao">
+              <input class="form-check-input" type="checkbox" value="" id="natacao"> Natação
             </label>
   
           </div>
           <div class="col">
-            <label class="form-check-label d-block" for="basquete">
-              <input class="form-check-input" type="checkbox" value="" id="basquete2" > BASQUETE
+            <label class="form-check-label d-block" for="volei">
+              <input class="form-check-input" type="checkbox" value="" id="volei" > Vôlei
             </label>
 
-            <label class="form-check-label d-block" for="volei">
-              <input class="form-check-input" type="checkbox" value="" id="volei2"> VOLEI 
+            <label class="form-check-label d-block" for="tenis">
+              <input class="form-check-input" type="checkbox" value="" id="tenis"> Tênis
+            </label>
+
+            <label class="form-check-label d-block" for="pong">
+              <input class="form-check-input" type="checkbox" value="" id="pong"> Ping Pong
+            </label>
+
+            <label class="form-check-label d-block" for="sakte">
+              <input class="form-check-input" type="checkbox" value="" id="skate"> Skate
+            </label>
+
+            <label class="form-check-label d-block" for="futsal">
+              <input class="form-check-input" type="checkbox" value="" id="futsal"> Futsal
             </label>
           </div>
 
@@ -56,25 +77,25 @@
         </div>
       </div>
 
-      <label for="exampleInputEmail1" class="form-label">Preço R$</label>
-      <input type="number" class="form-control" placeholder="Digite o Preço que deseja cobrar">
+      <label for="preco" class="form-label">Preço R$</label>
+      <input type="number" class="form-control mb-4" placeholder="Digite o Preço que deseja cobrar">
 
-      <label for="formFileMultiple" class="form-label">Fotos</label>
-     <input class="form-control" type="file" id="formFileMultiple" multiple>
-
-
-      <label for="exampleInputEmail1" class="form-label">Endereço</label>
-      <input type="text" class="form-control" placeholder="Digite o Endereço da quadra">
+      <label for="fotos" class="form-label">Fotos</label>
+     <input class="form-control mb-4" type="file" id="fotos" multiple>
 
 
-      <label for="exampleInputEmail1" class="form-label">Cep</label>
-      <input type="number" class="form-control" placeholder="Digite o cep da quadra">
+      <label for="endereco" class="form-label">Endereço</label>
+      <input type="text" class="form-control mb-4" placeholder="Digite o Endereço da quadra">
 
 
-      <label for="exampleInputEmail1" class="form-label">Número</label>
-      <input type="number" class="form-control "
+      <label for="cep" class="form-label">Cep</label>
+      <input type="number" class="form-control mb-4" placeholder="Digite o cep da quadra">
+
+
+      <label for="telefone" class="form-label">Número</label>
+      <input type="tel" class="form-control mb-4 "
         placeholder="Digite um número telefonico para contato"><!--input titulo anuncio -->
-      <button type="submit" class="btn btn-primary">Criar conta</button>
+      <button type="submit" class="btn btn-primary">Criar anuncio</button>
     </form>
   </div>
 

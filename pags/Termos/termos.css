@@ -12,27 +12,29 @@ body{
     justify-content: center;
     align-items: center;
     margin: 0;
-    background-color: #24c0eb;
 }
 .termos{
-    
-    background-color: #cacaca;
+    padding: 20px;
+    margin:auto;
+    background: none;
     width: 90%;
     height:auto;
     border-radius: 25px;
 }
 .termos div{
-    margin-left: 20px;
-    margin-right:20px ;
-    margin-bottom: 20px;
+    padding: 20px;
+    margin:auto;
+    background-color: #cacaca;
+    width: 90%;
+    height:auto;
+    border-radius: 25px;
 }
+
 .termos p{
     padding-top: 10px;
 }
 
-h1{
-    text-align: center;
-}
+
 @media(max-width:1200px){
     .termos{
         width: 90%;
@@ -41,6 +43,9 @@ h1{
     body{
         padding-top: 20px;
         height: auto;
+    }
+    .logo{
+        width: 200px;
     }
 
 }
