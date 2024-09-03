@@ -5,6 +5,13 @@
     scroll-behavior: smooth;
   }
   
+  :root{
+    --blue-primary:#00BBC9;
+  --cinza-primary:#324B4E;
+  --cinza-secondary:#94B0B3;
+  --blue-secondary:#3A8FD7;
+  --transparence-primary:#cacaca;
+  }
 body{
     width: 100%;
     height: 100vh; 
@@ -12,7 +19,7 @@ body{
     justify-content: center;
     align-items: center;
     margin: 0;
-    background-color: #24c0eb;
+    background-color: var(--cinza-primary);
 }
 .login{
     margin: 10px;
@@ -51,11 +58,15 @@ a{
 }
 
 .btn-primary{
+    background-color:var(--cinza-primary);
+    border: none;
     width: 100%;
     border-radius: 25px;
+    margin-bottom: 20px;
 }
 .btn-primary:hover{
-    background-color: #24c0eb;
-    border: 1px #00bbc9;
+    background-color: #000;
+    border: none;
+    color: #ffffff;
 }
 

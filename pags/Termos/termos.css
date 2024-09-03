@@ -12,7 +12,15 @@ body{
     justify-content: center;
     align-items: center;
     margin: 0;
+    background-color: var(--cinza-primary) !important;
 }
+:root{
+    --blue-primary:#00BBC9;
+  --cinza-primary:#324B4E;
+  --cinza-secondary:#94B0B3;
+  --blue-secondary:#3A8FD7;
+  --transparence-primary:#cacaca;
+  }
 .termos{
     padding: 20px;
     margin:auto;

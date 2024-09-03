@@ -4,14 +4,20 @@
   box-sizing: border-box;
   scroll-behavior: smooth;
 }
-
+:root{
+  --blue-primary:#00BBC9;
+--cinza-primary:#324B4E;
+--cinza-secondary:#94B0B3;
+--blue-secondary:#3A8FD7;
+--transparence-primary:#cacaca;
+}
 
 .header-container{
   position: relative;
   display: flex;
   align-items: center;
   width: 100%;
-  background-color:#00bbc9;
+  background-color:var(--blue-secondary);
   justify-content: left;
   padding: 0vw 2vw;
   height: 98px;
@@ -23,15 +29,18 @@
 .foto-user {
   align-items:center;
  justify-content: center;
- padding-left: 16px;
- padding-right: 16px;
  border: none;
  display: flex;
 
 }
+.search{
+  background-color: #ffffff !important;
+
+}
+
 
 .btn-secondary{
-  background-color: #00bbc9 !important;
+  background-color: var(--blue-secondary) !important;
  
 }
 .btn{
@@ -39,7 +48,7 @@
 }
 
 .dropdown-item:hover{
-  background-color: #44E3D3 !important;
+  background-color: var(--blue-secondary) !important;
   box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 48px;
 }
 .login{
@@ -55,12 +64,16 @@
 .login:hover{
   transition: all 200ms linear;
   box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 48px;
-  background-color:#44E3D3;
+  background-color:#cacaca;
   color: #000000;
 }
 .login01{
-margin: 10px;
+  margin-left: 20px;
 
+}
+.login02{
+  margin-left:20px;
+  margin-right: 20px;
 }
 
 .search{
@@ -69,7 +82,7 @@ margin: 10px;
   padding: 10px;
   align-items: center;
   border-radius: 25px;
-  border: 1px solid #000000;
+
   background-color: #CACACA;
   width: 70%;
   }
@@ -99,7 +112,6 @@ margin: 10px;
   display: flex;
   justify-content: space-around;
   align-items: center;
-  width: 60%;
   height: 90px;
   margin: 40px auto;
   border-radius:20px;
@@ -107,14 +119,14 @@ margin: 10px;
 }
 
 .retangulo li{
-  width: 85px;
+  width: 110px;
   height: 100px;
   background-color: #CACACA;
   border-radius: 20px;
   display: flex;
   flex-direction: column;
   text-align: center;
-  justify-content: center;
+  justify-content: end;
   align-items: center;
 }
 
@@ -145,13 +157,13 @@ margin: 10px;
 }
 
 .melhores-avaliados li,.mais-populares li,.menor-custo li{
-  background-color: #CACACA;
+  
   display:flex;
   justify-content: center;
   align-items: right;
   flex-direction: column;
   width: 250px;
-  height: 199px;
+  height: auto;
   margin-left: 40px;
   margin-right: 40px;
   
@@ -160,10 +172,15 @@ margin: 10px;
   border-radius: 20px;
 }
 
+.txt-anuncio{
+  text-align: left;
+  margin-top: 10px;
+  margin-left: 10px;
+}
 footer{
   
  
-  background-color: #00bbc9;
+  background-color: var(--blue-secondary);
   height:70%;
 }
 footer .footer-container{

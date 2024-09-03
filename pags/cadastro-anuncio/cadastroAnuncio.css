@@ -10,8 +10,15 @@ body{
     justify-content: center;
     align-items: center;
     margin: 0;
-    background-color: #24c0eb;
+    background-color: var(--cinza-primary);
 }
+:root{
+    --blue-primary:#00BBC9;
+  --cinza-primary:#324B4E;
+  --cinza-secondary:#94B0B3;
+  --blue-secondary:#3A8FD7;
+  --transparence-primary:#cacaca;
+  }
 .login{
     padding: 20px;
     margin: 20px;
@@ -48,14 +55,17 @@ a{
     color: #0000FF; 
 }
 .btn-primary{
-    margin-top: 20px;
+    background-color:var(--cinza-primary);
+    border: none;
     width: 100%;
     border-radius: 25px;
     margin-bottom: 20px;
 }
-
 .btn-primary:hover{
-    background-color: #24c0eb;
-    border:  #00bbc9;
+    background-color: #000;
+    border: none;
+    color: #ffffff;
 }
+
+
 
