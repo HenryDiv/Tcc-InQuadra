@@ -19,7 +19,7 @@ body{
     justify-content: center;
     align-items: center;
     margin: 0;
-    background-color: var(--cinza-primary);
+    background-color: var(--blue-secondary);
 }
 .login{
     margin: 10px;
@@ -58,14 +58,14 @@ a{
 }
 
 .btn-primary{
-    background-color:var(--cinza-primary);
+    background-color:#707070;
     border: none;
     width: 100%;
     border-radius: 25px;
     margin-bottom: 20px;
 }
 .btn-primary:hover{
-    background-color: #000;
+    background-color:var(--blue-secondary);
     border: none;
     color: #ffffff;
 }

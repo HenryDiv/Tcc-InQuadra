@@ -59,7 +59,7 @@
   .login:hover{
     transition: all 200ms linear;
     box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 48px;
-    background-color:var(--transparence-primary);
+    background-color:var(--blue-primary);
     color: #000000;
   }
   .login01{
@@ -78,7 +78,7 @@
     align-items: center;
     border-radius: 25px;
   
-    background-color: #CACACA;
+    background-color:#ffffff;
     width: 70%;
     }
   
