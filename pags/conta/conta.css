@@ -129,3 +129,31 @@
   margin-right: 40px;
   border-radius: 25px;
  }
+
+ @media (max-width:1200px) {
+ .config ul{
+  padding: 0;
+  margin-left: 20px;
+  margin-right: 20px;
+  flex-direction: column;
+ }
+ .config li{
+  margin-bottom: 20px;
+  width: 100%;
+ }
+  footer .footer-container ul{
+    width: 100%;
+    padding: 13px;
+    margin: 0 !important;
+    width: 100%;
+  }
+  footer .footer-container{
+    flex-direction: column;
+  }
+  .foto-user{
+    display: none;
+  }
+  .login{
+    display: none;
+  }
+}

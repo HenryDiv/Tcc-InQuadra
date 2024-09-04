@@ -12,7 +12,7 @@ body{
     justify-content: center;
     align-items: center;
     margin: 0;
-    background-color: var(--blue-secondary) !important;
+    background-color: var(--cinza-primary) !important;
 }
 :root{
     --blue-primary:#00BBC9;
