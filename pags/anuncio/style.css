@@ -155,7 +155,7 @@ a{
 }
 
 footer {
-  background-color: #00bbc9;
+  background-color: var(--blue-secondary);
   height: 70%;
 }
 footer .footer-container {
