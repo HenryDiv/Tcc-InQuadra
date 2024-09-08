@@ -58,13 +58,13 @@
   width: 120px;
   height: 40px;
   gap: 40px;
-  transition: all 200ms linear;
+ 
 
 }
 .login:hover{
-  transition: all 200ms linear;
+  transition: all 200ms linear !important;
   box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 48px;
-  background-color:#cacaca;
+  background-color:var(--cinza-secondary);
   color: #000000;
 }
 .login01{
@@ -129,6 +129,7 @@
   align-items: center;
 }
 .retangulo li:hover{
+  transition: all 200ms linear;
   background-color: var(--blue-secondary);
   filter: grayscale(100%);
   
